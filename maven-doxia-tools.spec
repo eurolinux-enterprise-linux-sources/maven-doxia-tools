@@ -1,6 +1,6 @@
 Name:		maven-doxia-tools
 Version:	1.4
-Release:	15%{?dist}
+Release:	13%{?dist}
 Summary:	Maven Doxia Integration Tools
 
 License:	ASL 2.0
@@ -19,7 +19,6 @@ BuildRequires:	maven-doxia-sitetools
 BuildRequires:	maven-resources-plugin
 BuildRequires:	maven-plugin-testing-harness
 BuildRequires:	maven-shared-reporting-impl
-BuildRequires:	maven-shared
 BuildRequires:	plexus-containers-component-metadata
 BuildRequires:	java-devel >= 1:1.6.0
 
@@ -67,13 +66,6 @@ API documentation for %{name}.
 %doc LICENSE
 
 %changelog
-* Fri Aug  1 2014 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.4-15
-- Add missing build-requires on maven-shared
-- Resolves: rhbz#1074928
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4-14
-- Mass rebuild 2013-12-27
-
 * Fri Aug 16 2013 Stanislav Ochotnicky <sochotnicky@redhat.com> - 1.4-13
 - Migrate away from mvn-rpmbuild (#997442)
 
